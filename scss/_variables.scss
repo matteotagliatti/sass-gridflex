@@ -1,0 +1,57 @@
+// Base
+$base-border: 1px solid #ddd;
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+$base-border-radius: 5px;
+
+// Font
+$base-font-size: 1rem;
+$font-size-xs: $base-font-size * 0.75;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+
+// Colors
+$colors: (
+    "blue": #326dee,
+    "green": #1ac888,
+    "red": #d32752,
+    "yellow": #f6c31c,
+    "orange": #ffa600,
+    "purple": #9900ff,
+    "grey": #808080,
+    "black": #000,
+    "white": #fff,
+);
+
+// Margin & Padding
+$direction: (
+    "t": top,
+    "r": right,
+    "b": bottom,
+    "l": left,
+);
+$value: (
+    "0": 0,
+    "1": 10px,
+    "2": 20px,
+    "3": 30px,
+);
+
+// Breakpoints
+$breakpoints: (
+    "xs": 0,
+    "sm": 480px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px,
+);
+
+// Grid System
+$grid-columns: 12;
+$grid-gaps: (
+    "0": 0,
+    "1": 10px,
+    "2": 20px,
+    "3": 30px,
+);
+$layout-values: flex-start, flex-end, center, space-between, space-around;

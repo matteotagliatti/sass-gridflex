@@ -1,0 +1,20 @@
+// Cards
+.card {
+    display: block;
+    border: $base-border;
+    border-radius: $base-border-radius;
+    box-shadow: $base-box-shadow;
+
+    .title {
+        font-size: $font-size-xl;
+        font-weight: bold;
+    }
+
+    .body {
+        font-size: $base-font-size;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}

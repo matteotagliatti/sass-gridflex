@@ -1,0 +1,111 @@
+// Margin & Padding
+@each $key, $val in $value  {
+    // Margin
+    .m-#{$key} {
+        margin: $val;
+    }
+    @each $direction-key, $direction-value in $direction {
+        .m-#{$direction-key}-#{$key} {
+            margin-#{$direction-value}: $val;
+        }
+    }
+
+    // Padding
+    .p-#{$key} {
+        padding: $val;
+    }
+    @each $direction-key, $direction-value in $direction {
+        .p-#{$direction-key}-#{$key} {
+            padding-#{$direction-value}: $val;
+        }
+    }
+}
+
+// Container
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// Row
+.row {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+// Col
+@include xs {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-xs {
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: ($i * 100%) / $grid-columns;
+        }
+    }
+}
+@include sm {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-sm {
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: ($i * 100%) / $grid-columns;
+        }
+    }
+}
+@include md {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-md {
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: ($i * 100%) / $grid-columns;
+        }
+    }
+}
+@include lg {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-lg {
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: ($i * 100%) / $grid-columns;
+        }
+    }
+}
+@include xl {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-xl {
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: ($i * 100%) / $grid-columns;
+        }
+    }
+}
+
+// Grid Gaps 
+@each $key, $val in $grid-gaps {
+    .gap-#{$key} > * {
+        padding: $val;
+    }
+    .gap-#{$key} {
+        margin-left: -$val;
+        margin-right: -$val;
+    }
+}
+
+// Grid Gaps (alternative using 'gap' property)
+/* @each $key, $val in $grid-gaps {
+    .gap-#{$key} {
+        gap: $val;
+    }
+} */
+
+// Justify Content Classes
+@each $val in $layout-values {
+    .justify-#{$val} {
+        justify-content: $val;
+    }
+}
