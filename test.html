@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!--  Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>Test Page</h1>
+            <p>A responsive 12 columns grid system based on the flex property, written in Sass. Code <a target="_blank" href="https://github.com/matteotagliatti/sass-gridflex">here</a></p>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Grid -->
+        <h2>Grid</h2>
+
+        <div class="row gap-3">
+            <div class="col-12-xs col-6-md">
+                <p class="bg-purple text-white">Prova</p>
+            </div>
+            <div class="col-12-xs col-6-md">
+                <p class="bg-yellow text-red">Prova</p>
+            </div>
+        </div>
+        
+        <div class="row justify-flex-end">
+            <div class="col-6-xs col-4-sm">
+                <p class="bg-red text-white">Prova</p>
+            </div>
+            <div class="col-6-xs col-4-sm">
+                <p class="bg-black text-white">Prova</p>
+            </div>
+        </div>
+
+        <!-- Colors -->
+        <h2 class="m-t-3">Colors</h2>
+
+        <div class="row">
+            <div class="col-12-xs">
+
+                <!-- Text Colors -->
+                <h3>Text Colors</h3>
+                <span class="text-blue">Blue Text</span>
+                <span class="text-green">Green Text</span>
+                <span class="text-red">Red Text</span>
+                <span class="text-yellow">Yellow Text</span>
+                <span class="text-orange">Orange Text</span>
+                <span class="text-purple">Purple Text</span>
+                <span class="text-grey">Grey Text</span>
+                <span class="text-black">Black Text</span>
+                <span class="text-white bg-black">White Text</span>
+
+                <!-- Background Colors -->
+                <h3>Background Colors</h3>
+                <span class="bg-blue text-white">Blue bg</span>
+                <span class="bg-green text-white">Green bg</span>
+                <span class="bg-red text-white">Red bg</span>
+                <span class="bg-yellow text-white">Yellow bg</span>
+                <span class="bg-orange text-white">Orange bg</span>
+                <span class="bg-purple text-white">Purple bg</span>
+                <span class="bg-grey text-white">Grey bg</span>
+                <span class="bg-black text-white">Black bg</span>
+                <span class="bg-white text-black">White bg</span>
+
+                <!-- Variations -->
+                <h3>Dark & Light Variations</h3>
+                <span class="bg-blue-light-7 text-white">Blue bg light</span>
+                <span class="bg-green-light-2 text-white">Green bg light</span>
+                <span class="bg-blue-dark-3 text-white">Blue bg dark</span>
+                <span class="bg-green-dark-7 text-white">Green bg dark</span>
+
+                <!-- :hover -->
+                <h3>Hover Color</h3>
+                <span class="bg-blue-light-7 text-white text-hover-black">Blue bg light</span>
+                <span class="bg-green-light-2 text-white text-hover-black">Green bg light</span>
+                <span class="bg-blue-dark-3 text-white text-hover-green-dark-7">Blue bg dark</span>
+                <span class="bg-green-dark-7 text-white text-hover-green-dark-3">Green bg dark</span>
+            </div>
+        </div>
+
+        <!-- Font -->
+        <h2>Font Size</h2>
+
+        <div class="row">
+            <span class="font-sm">Small Font</span>
+            <span class="font-md">Medium Font</span>
+            <span class="font-lg">Large Font</span>
+            <span class="font-xl">Extra Large Font</span>
+        </div>
+
+        <!-- Card -->
+        <h2>Card</h2>
+        
+        <div class="row">
+            <div class="card col-6-md p-2">
+                <h2 class="title">This is a card title</h2>
+                <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam ab deserunt iusto optio cupiditate libero, quam corporis nobis obcaecati veritatis nam fugit recusandae minus necessitatibus ex maxime praesentium itaque.</p>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <h2>Buttons</h2>
+        
+        <div class="row">
+            <div class="col-12-xs">
+                <button class="btn m-r-2">Default Button</button>
+                <button class="btn-red text-white m-r-2">Button</buttonc>
+                <button class="btn-outlined-red text-hover-white">Button</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

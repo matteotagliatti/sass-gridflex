@@ -1,11 +1,11 @@
 // Base
+$base-padding: 0.75rem;
 $base-border: 1px solid #ddd;
 $base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 $base-border-radius: 5px;
 
 // Font
 $base-font-size: 1rem;
-$font-size-xs: $base-font-size * 0.75;
 $font-size-sm: $base-font-size * 0.75;
 $font-size-lg: $base-font-size * 1.5;
 $font-size-xl: $base-font-size * 2;
@@ -23,8 +23,168 @@ $colors: (
     "white": #fff,
 );
 
-// Margin & Padding
-$direction: (
+// Utilities
+$utilities: (
+    "padding": (
+        "prefix": "p",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 3,
+            "4": $base-padding * 4,
+            "5": $base-padding * 5,
+        ),
+    ),
+    "padding-top": (
+        "prefix": "p-t",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 3,
+            "4": $base-padding * 4,
+            "5": $base-padding * 5,
+        ),
+    ),
+    "padding-right": (
+        "prefix": "p-r",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 3,
+            "4": $base-padding * 4,
+            "5": $base-padding * 5,
+        ),
+    ),
+    "padding-bottom": (
+        "prefix": "p-b",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 3,
+            "4": $base-padding * 4,
+            "5": $base-padding * 5,
+        ),
+    ),
+    "padding-left": (
+        "prefix": "p-f",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 3,
+            "4": $base-padding * 4,
+            "5": $base-padding * 5,
+        ),
+    ),
+    "margin": (
+        "prefix": "m",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 3,
+            "4": $base-padding * 4,
+            "5": $base-padding * 5,
+        ),
+    ),
+    "margin-top": (
+        "prefix": "m-t",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 3,
+            "4": $base-padding * 4,
+            "5": $base-padding * 5,
+        ),
+    ),
+    "margin-right": (
+        "prefix": "m-r",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 3,
+            "4": $base-padding * 4,
+            "5": $base-padding * 5,
+        ),
+    ),
+    "margin-bottom": (
+        "prefix": "m-b",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 3,
+            "4": $base-padding * 4,
+            "5": $base-padding * 5,
+        ),
+    ),
+    "margin-left": (
+        "prefix": "m-l",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 3,
+            "4": $base-padding * 4,
+            "5": $base-padding * 5,
+        ),
+    ),
+    "opacity": (
+        "prefix": "o",
+        "values": (
+            "10": 0.1,
+            "20": 0.2,
+            "30": 0.3,
+            "40": 0.4,
+            "50": 0.5,
+            "60": 0.6,
+            "70": 0.7,
+            "80": 0.8,
+            "90": 0.9,
+            "100": 1,
+        ),
+    ),
+    "border-radius": (
+        "prefix": "br",
+        "values": (
+            "default": $base-border-radius,
+            "none": 0,
+            "xs": $base-border-radius / 4,
+            "sm": $base-border-radius / 2,
+            "lg": $base-border-radius * 2,
+            "full": 50%,
+        ),
+    ),
+    "display": (
+        "prefix": "display",
+        "values": (
+            "n": none,
+            "b": block,
+            "f": flex,
+            "i": inline,
+            "i-b": inline-block,
+        ),
+    ),
+    "font-size": (
+        "prefix": "font",
+        "values": (
+            "sm": $font-size-sm,
+            "md": $base-font-size,
+            "lg": $font-size-lg,
+            "xl": $font-size-xl,
+        ),
+    ),
+    
+);
+
+// Alternative, more simple, version for margin and padding
+/* $direction: (
     "t": top,
     "r": right,
     "b": bottom,
@@ -35,7 +195,7 @@ $value: (
     "1": 10px,
     "2": 20px,
     "3": 30px,
-);
+); */
 
 // Breakpoints
 $breakpoints: (

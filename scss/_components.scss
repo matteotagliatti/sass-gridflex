@@ -18,3 +18,48 @@
         }
     }
 }
+
+// Buttons
+.btn {
+    @include btn;
+}
+
+@each $key, $val in $colors {
+    .btn-#{$key} {
+        @include btn($val);
+        &:hover {
+            background-color: lighten($val, 10)
+        }
+    }
+
+    .btn-outlined-#{$key} {
+        @include btn(#fff); 
+        border: 1px solid $val;
+        &:hover {
+            background-color: $val;
+        }
+    }
+}
+
+// Navbar 
+%flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.navbar {
+    @extend %flex;
+    padding: $base-padding $base-padding * 2;
+    box-shadow: $base-box-shadow;
+
+    .title {
+        font-size: $font-size-lg;
+    }
+
+    .container {
+        @extend %flex;
+    }
+}

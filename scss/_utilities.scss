@@ -1,0 +1,40 @@
+@each $property, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $key, $value in $values {
+        @if ($key == "default") {
+            .#{$prefix} {
+                #{$property}: $value;
+            }
+        } @else {
+            .#{$prefix}-#{$key} {
+                #{$property}: $value;
+            }
+        }
+    }
+} 
+
+// Alternative, more simple, version for margin and padding
+/* @each $key, $val in $value  {
+    // Margin
+    .m-#{$key} {
+        margin: $val;
+    }
+    @each $direction-key, $direction-value in $direction {
+        .m-#{$direction-key}-#{$key} {
+            margin-#{$direction-value}: $val;
+        }
+    }
+
+    // Padding
+    .p-#{$key} {
+        padding: $val;
+    }
+    @each $direction-key, $direction-value in $direction {
+        .p-#{$direction-key}-#{$key} {
+            padding-#{$direction-value}: $val;
+        }
+    }
+}
+ */

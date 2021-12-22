@@ -1,26 +1,3 @@
-// Margin & Padding
-@each $key, $val in $value  {
-    // Margin
-    .m-#{$key} {
-        margin: $val;
-    }
-    @each $direction-key, $direction-value in $direction {
-        .m-#{$direction-key}-#{$key} {
-            margin-#{$direction-value}: $val;
-        }
-    }
-
-    // Padding
-    .p-#{$key} {
-        padding: $val;
-    }
-    @each $direction-key, $direction-value in $direction {
-        .p-#{$direction-key}-#{$key} {
-            padding-#{$direction-value}: $val;
-        }
-    }
-}
-
 // Container
 .container {
     box-sizing: border-box;
@@ -103,7 +80,7 @@
     }
 } */
 
-// Justify Content Classes
+// Justify Content
 @each $val in $layout-values {
     .justify-#{$val} {
         justify-content: $val;
