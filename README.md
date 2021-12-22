@@ -6,6 +6,8 @@ A responsive 12 columns grid system based on the flex property, written in Sass.
 
 👉 [Test](https://matteotagliatti.github.io/sass-gridflex/demo.html) (for visualize styles)
 
+Made for [The Odin Project](https://www.theodinproject.com/) curriculum.
+
 ## How to use
 
 ### Container, Rows and Columns
