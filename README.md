@@ -1,12 +1,6 @@
 # SASS GridFlex
 
-A responsive 12 columns grid system based on the flex property, written in Sass. It's fully responsive and easy to implement, inspired by Bootstrap class names.
-
-👉 [Demo](https://matteotagliatti.github.io/sass-gridflex/demo.html)
-
-👉 [Test](https://matteotagliatti.github.io/sass-gridflex/demo.html) (for visualize styles)
-
-Made for [The Odin Project](https://www.theodinproject.com/) curriculum.
+A responsive 12 columns grid system based on the flex property, written in Sass. It's fully responsive and easy to implement.
 
 ## How to use
 
